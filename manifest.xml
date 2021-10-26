@@ -63,23 +63,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICryptoFactory</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.3::ICryptoFactory/clearkey</fqname>
-        <fqname>@1.3::IDrmFactory/clearkey</fqname>
-        <fqname>@1.2::ICryptoFactory/widevine</fqname>
-        <fqname>@1.2::IDrmFactory/widevine</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -87,17 +70,6 @@
             <name>IGatekeeper</name>
             <instance>default</instance>
         </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.gnss</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGnss</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IGnss/default</fqname>
-        <fqname>@1.0::IGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
@@ -276,7 +248,7 @@
     <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>2.2</version>
         <interface>
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
@@ -319,16 +291,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.gnss</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILocHidlGnss</name>
-            <instance>gnss_vendor</instance>
-        </interface>
-        <fqname>@1.0::ILocHidlGnss/gnss_vendor</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -349,7 +311,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IBluetoothSar</name>
             <instance>default</instance>
@@ -431,7 +393,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.2</version>
         <interface>
             <name>IPerf</name>
             <instance>default</instance>
@@ -463,7 +425,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.5</version>
+        <version>1.6</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -503,7 +465,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <version>2.3</version>
+        <version>2.4</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
@@ -559,9 +521,18 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IImsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>3.0</version>
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
